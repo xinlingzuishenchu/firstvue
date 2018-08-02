@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+//全局引入css
+import 'animate.css';
+import './assets/css/style.css';
 
 Vue.config.productionTip = false
 

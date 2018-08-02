@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-    <h1 @click="change">{{msg}}</h1>
-    
+  <h3>tab切换</h3>
+    <ul>
+      <li>
+        <router-link to="/home">主页</router-link>
+      </li>
+      <li>
+        <router-link to="/news">新闻</router-link>
+      </li>
+    </ul>
+    <div>
+      <transition enter-active-class="zoomInLeft" leave-active-class="zoomOutRight">
+        <router-view class="animated"></router-view>
+      </transition>
+    </div>
   </div>
 </template>
-
 <script>
 export default {
   name: 'App',
@@ -31,5 +40,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+li{
+  display:inline-block;
 }
 </style>
