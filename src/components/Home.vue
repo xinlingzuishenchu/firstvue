@@ -6,7 +6,7 @@
 	  name: 'Home',
 	  data () {
 	    return {
-	      msg: '我是主页'
+	      msg: '我是主页123'
 	    }
 	  }
 	}
